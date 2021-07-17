@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="5dp"
+    tools:context=".WeatherActivity">
+
+    <TextView
+        android:id="@+id/txtcity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="city"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        ></TextView>
+
+    <Button
+        android:id="@+id/btnsave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5sdp"
+        android:text="Add to favourite locations"
+        ></Button>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/weatherrecycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        ></androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>

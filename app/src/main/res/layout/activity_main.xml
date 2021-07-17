@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="3dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Search by enter city"
+        android:paddingLeft="@dimen/_10sdp"
+        android:textSize="@dimen/_16sdp"
+        ></TextView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/_7sdp"
+        android:weightSum="3"
+        >
+        <EditText
+            android:id="@+id/txtsearch"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="40dp"
+            android:hint="cairo,eg"
+            android:padding="7dp"
+            android:layout_marginRight="@dimen/_3sdp"
+            android:background="@mipmap/rounded_rectangle_21"
+            ></EditText>
+        <Button
+            android:id="@+id/btncitysearch"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Search"
+            android:padding="10dp"
+            ></Button>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="-------------------------"
+        android:gravity="center"
+        android:textSize="@dimen/_18sdp"
+        android:textStyle="bold"
+        ></TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="search by your location"
+        android:textSize="@dimen/_16sdp"
+        android:paddingLeft="@dimen/_10sdp"
+        ></TextView>
+
+    <Button
+        android:id="@+id/btnlocsearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Search by location"
+        android:layout_margin="@dimen/_7sdp"
+        ></Button>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="-------------------------"
+        android:gravity="center"
+        android:textSize="@dimen/_18sdp"
+        android:textStyle="bold"
+        ></TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="search by your favourite cities"
+        android:textSize="@dimen/_16sdp"
+        ></TextView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/favcitiesrecycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/_7sdp"
+        ></androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>
